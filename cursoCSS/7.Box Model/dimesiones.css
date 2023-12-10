@@ -1,0 +1,72 @@
+body {background-color: aquamarine;}
+
+/* 
+Como el sig es un elemto de linea, veremos que las propiedades width y height no surten efecto 
+*/
+
+.linea {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Como se aplica width y height a un div, que es elemento de bloque, los cambios a las dimensiones de la caja se aplican */
+
+div{
+    background-color: purple;
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 50px;
+}
+
+/* div provocara que las clases .bloque asuman las propiedades declaradas */
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* 
+Las siguientes cajas tienen su contenido desbordado y para solucionarlo usamos "overflow" que puede tomar los sguientes valores:
+    -hidden: oculta el contenido desbordado
+    -scroll: pone barras de desplazamiento veticales y horizontales
+    -auto: coloca barras de desplazamiento solo si son necesarias (es recomndable si el contenido es dinamico y cambia constantemnte)
+
+    Tambien puedo especificar si solo aplicar overflow en el eje x o el eje y: "overflow-x" - "overflow-y"
+*/
+
+
+.bloque1{
+    border-radius: initial;
+    /* "initial" elimina la herencia de los bordes redondeados llevando tal valor a cero*/
+}
+
+/* ---------------------------------------------------------------------- */
+
+.bloque2 {
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.bloque3 {
+    padding: 30px;
+    overflow: scroll;
+    /* 
+    En este caso no es necesaria la barra de desplazamiento horizontal pero aparece igual
+    */
+}
+
+/* ---------------------------------------------------------------------- */
+
+.bloque4 {
+    padding: 30px;
+    overflow: auto;
+}
+
+/* ---------------------------------------------------------------------- */

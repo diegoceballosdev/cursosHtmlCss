@@ -1,0 +1,55 @@
+body {background-color: aquamarine}
+
+
+/* Asigno estilo a las cajas con div */
+
+div {
+    background-color: tomato;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/* En .block modifico las cajas para que se comporten como elementos de linea*/
+
+.block {
+    display: inline;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* Asigno estilo a las lineas con span */
+
+span {
+    background-color:violet;
+}
+
+.line {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Podemos ver que luego de convertir la linea en un bloque, ya es posible aplicar las propiedades que antes no podiamos por se una linea, como width, height y margenes-verticales*/
+
+
+/* ---------------------------------------------------------------------- */
+
+.inline-block {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* El elemento serà de linea pero podra asumir las propiedades de bloque omo width, height y margenes-verticales */

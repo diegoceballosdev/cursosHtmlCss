@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input radio</title>
+</head>
+
+<body>
+
+    <h1>Elementos de seleccion unica</h1>
+
+    <form>
+
+        <h2>input radio</h2>
+
+        <!-- input de tipo "radio" nos permiten seleccionar "un" elemento de una lista de opciones-->
+        <!-- el "name" debe ser igual en todos los inputs pues pertenecen a la misma categoria, si fueran distintos se podria elegir mas de una opcion y no es lo que queremos -->
+        <!-- "checked" es un atributo booleando para que la opcion este marcada por defecto desde el inicio. Si marco mas de uno, solo se marcara el primero en leerse -->
+        
+        <p>
+            Ingresos:<br>
+
+            <input type="radio" name="ingresos" value="menosde1000" id="menosde1000"> 
+            <label for="menosde1000">Menos de than $1,000.00</label><br>
+
+            <input type="radio" name="ingresos" value="de1000a5000" id="1mill-5mill"> 
+            <label for="1000-5000">De $1,000.00 a $5,000.00</label><br>
+
+            <input type="radio" name="ingresos" value="masde5000" id="masde5000">
+            <label for="masde5000">Más de $5,000.00</label><br>
+
+            <input type="radio" name="ingresos" value="No quiero decirlo" id="nodecir">
+            <label for="nodecir">No quiero decirlo</label>
+        </p>
+
+        <button>Enviar</button>
+
+        <p>
+            Lenguaje favorito: <br>
+
+            <input type="radio" name="lenguaje" value="javascript" id="radio-js" checked>
+            <label for="radio-js">JavaScript</label><br>
+            
+            <input type="radio" name="lenguaje" value="php" id="eadio-php">
+            <label for="radio-php">PHP</label><br>
+
+            <input type="radio" name="lenguaje" value="python" id="radio-py">
+            <label for="radio-py">Python</label><br>
+
+            <input type="radio" name="lenguaje" value="java" id="radio-ja">
+            <label for="radio-ja">Java</label><br>
+
+        </p>
+
+        <button>Enviar</button>
+
+    </form>
+
+</body>
+</html>

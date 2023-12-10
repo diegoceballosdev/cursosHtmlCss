@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+
+        <!-- En los moviles, estos atributos haran que el ingreso de datos tengan algunas caracteristicas especiales
+        -search: aparece una lupa pues es un buscador
+        -email: se daran sugerencias de email para el completado
+        -tel: aparece el teclado numerico
+        -password: los caracteres ingresados se mantienen ocultos a la vista...pero son visibles desde el codigo fuente 
+        -url: el teclado te sugiere algunas url para el autocompletado-->
+
+        <div>
+            <label> search
+                <input type="search" name="busqueda">
+            </label>
+        </div>
+
+        <div>
+            <label> email
+                <input type="email" name="correo">
+            </label>
+        </div>
+
+        <div>
+            <label> telefono
+                <input type="tel" name="telefono">
+            </label>
+        </div>
+
+        <div>
+            <label> password
+                <input type="password" name="contraseña">
+            </label>
+        </div>
+
+        <div>
+            <label> url
+                <input type="url" name="url">
+            </label>
+        </div>
+
+        <button>Enviar</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: grey;
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    border: 10px solid red;
+    padding: 20px;
+
+    /* 
+    Establecemos las propiedades de la caja mediante a traves del div.
+    */
+}
+
+.content-box{
+    box-sizing: content-box;
+    /* 
+    Al tamaño de la caja de contenido se le suman el paddin y el border. Asi el tamaño de todo el box-model sera el siguiente:
+    Ancho total = 200px + 2*20px + 2*10px = 260px
+    Alto total = 100px + 2*20px + 2*10px = 160px
+     Ancho de la caja de contenido: 200px
+     Altura de la caja de contenido: 100px
+    */
+}
+
+.border-box{
+    box-sizing: border-box;
+    /* 
+    El box-model mantiene su tamaño original, pues el padding y el border en vez de sumarse, se integran dentro de esos 200px*100px. Osea que a la caja de contenido, se le restan el padding y el border:
+    Ancho total: 200px
+    Altura total: 100px
+    Ancho de la caja de contenido: 200px - (2 * 20px) - (2 * 10px) = 140px
+    Altura de la caja de contenido: 100px - (2 * 20px) - (2 * 10px) = 40px 
+
+    */
+}
+
+/* 
+
+Una buena practica para no tener que usar el border-box en cada caja, es usar el selector universal:
+
+    * {
+        box-sizing: boredr-box
+    }
+
+*/

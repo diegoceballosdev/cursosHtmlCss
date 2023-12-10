@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <!-- Lo siguiente pertenece a CSS y solo lo estoy usando para apreciar apropiadamente las celdas de la tabla -->
+    <style>
+        td{
+            background-color:rgb(226, 141, 43);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header><h1>Tabla basica</h1></header>
+
+    <main>
+
+        <table>
+
+            <caption>HORARIO DE CLASES</caption>
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>8:30 - 9:30</td>
+                    <td rowspan="2">Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td>9:30 - 10:25</td>
+                    <td>Lengua</td>
+                    <td>Matematicas</td>
+                    <td>Ciencias</td>
+                    <td>Lengua</td>
+                </tr>
+                <tr>
+                    <td>10:25 - 11:20</td>
+                    <td>Educacion Fisica</td>
+                    <td>Ciencias</td>
+                    <td>Lengua</td>
+                    <td>Lengua</td>
+                    <td>Educacion Fisica</td>
+                </tr>
+                <tr>
+                    <td>11:20 - 11:45</td>
+                    <td colspan="5">Recreo</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 12:40</td>
+                    <td>Ingles</td>
+                    <td>Sociales</td>
+                    <td>Ingles</td>
+                    <td>Tutoria</td>
+                    <td>Ingles</td>
+                </tr>
+                <tr>
+                    <td>12:40 - 13:35</td>
+                    <td>Musica</td>
+                    <td>Educacion Fisica</td>
+                    <td>Plastica</td>
+                    <td>Religion</td>
+                    <td rowspan="2">Musica</td>
+                </tr>
+                <tr>
+                    <td>13:35 - 14:30</td>
+                    <td>Tecnologia</td>
+                    <td>Frances</td>
+                    <td>Tecnologia</td>
+                    <td>Frances</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">TOTAL DE ASIGNATURAS</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </main>
+    
+</body>
+</html>

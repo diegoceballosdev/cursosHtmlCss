@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* 
+    Un elemento padre (contenedor) jamás podrá colocarse encima del elemento hijo. Pero un hijo SI puede situarse detrás de su contenedor (padre). Esto puede sonar raro, pero así es como funciona: los elementos hijos que irán detrás, deben llevar un z-index negativo, y el padre NO DEBE TENER la propiedad z-index (IMPORTANTE).”    
+*/
+
+.container{
+    background-color: violet;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.box1{
+    background-color: tomato;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 200px;
+    z-index: -10;
+}
+
+.box2{
+    background-color: teal;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+    z-index: -20;
+}
+
+/* --------------------------------------------------------------------- */
+
+.box3{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    z-index: 20;
+}
+
+.box4{
+    background-color: lightskyblue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+/* 
+Ambos estan posicionados asi que box4 está por encima del box3, por el orden del html. Pero con z-index colocamos el box3 por encima del box4, asignando a box3 un valor mayor (20) 
+*/

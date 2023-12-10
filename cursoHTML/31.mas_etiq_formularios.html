@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Mas Etiquetas de Formularios</h1>
+
+    <form>
+
+        <!-- fieldset: se usa para agrupar elementos -->
+        <!-- legend: representa una etiqueta para el contenido del fieldset -->
+
+        <fieldset>
+
+            <legend>Datos personales</legend>
+
+            <div>
+                <label for="name">Nombres</label>
+                <input id="name" name="nombre">
+            </div>
+
+            <div>
+                <label for="surname">Apellidos</label>
+                <input id="surname" name="apellido">
+            </div>
+
+            <div>
+                <label for="dni">DNI</label>
+                <input id="dni" name="DNI">
+            </div>
+
+        </fieldset>
+
+        
+        <div>
+
+        <!-- textarea: area de texto, para escribir mensajes o comentarios -->
+
+            <label for="coment">Dejanos tu opinión:</label><br>
+            <textarea name="comentario" id="coment" cols="60" rows="15">Escribe aquí...</textarea>
+        
+        </div>
+
+        <div>
+
+            <!-- progress: representa el progreso de una tarea -->
+
+            <label for="task">Tarea 1</label>
+            <progress id="task" max="100" value="10"></progress>
+
+        </div>
+
+        <div>
+
+            <!-- meter: Representa un valor dentro de un rango conocido-->
+
+            <label for="fuel">Combustible</label>
+            <meter id="fuel" min="0" max="100" low="25" high="75" optimum="50" value="50"></meter>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>

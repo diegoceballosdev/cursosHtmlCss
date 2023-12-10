@@ -1,0 +1,36 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    background-color: yellow;
+    margin: 0px;
+}
+
+.box1{
+    background-color: tomato;
+    border-radius: 50px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.box2{
+    background-color: teal;
+}
+
+.box3{
+    background-color: violet;
+    border-radius: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+/* 
+    .box1 se mueve 100px hacia la derecha y 100px hacia abajo, y para el navegador en la posicion inicial de box1 sigue habiendo un div que mantiene tamaño y espacio reservada, por eso ningun otro elemento ocuapa ese lugar (a menos que usen position) */
+
+/* 
+    .box3 se mueve 50px hacia arriba y se coloca por encima del box2 porque en el HTML se encuentra luego de box2. 
+    Entonces en el html, si un elemento B esta luego de un elemento A, el  elemento B se solapara por encima quedando el A por detras 
+*/

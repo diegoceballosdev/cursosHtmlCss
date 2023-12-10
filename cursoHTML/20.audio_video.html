@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y video</title>
+</head>
+
+<body>
+
+    <header><h1>Multimedia con html</h1></header>
+
+    <main>
+
+        <h2>Atributos usados</h2>
+
+        <pre>
+            - controls: es para que aparezca el reproductor
+            - loop: para que se vuelva a reporducir automticamente al finalizar
+            - muted: para que inicie silenciado
+            - preload: para que se cargue en la memoria cache apenas ingresa a la pagina
+            - autoplay: inicia la reproduccion automaticamente
+            - poster: miniatura del video
+        </pre>
+
+        <hr>
+
+        <h2>Audio</h2>
+
+        <audio src="/assets/y2mate.com - Naruto Shippuden Opening 16 Silhouette.mp3" controls preload loop></audio>
+        
+        <p>Este es el Op 16 de Naruto Shippuden</p>
+
+        <hr>
+
+        <h2>Video</h2>
+
+        <video src="/assets/y2mate.com - Gohan se enfada y se transforma en SSJ2 1080p ᴴᴰ_360p.mp4" controls autoplay muted poster="/assets/gohan.jpg"></video>
+
+        <p>Esta es la escena donde Gohan se enfada y se transforma en SSJ2.</p>
+
+    </main>
+
+</body>
+</html>

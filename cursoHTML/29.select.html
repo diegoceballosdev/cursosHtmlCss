@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+
+<body>
+
+    <h1>Listas - Elementos Seleccionables</h1>
+
+    <!-- "selected" permite que una opcion aparezca seleccionada por defecto -->
+    <!-- "required" obliga a que se llene el campo del formulario, de lo contrario no puede ser enviado -->
+
+    <form>
+
+        <div>
+
+            <h2>select basico</h2>
+
+            <select name="animales">
+
+                <option value="gato">Gato</option>
+                <option value="perro" selected>Perro</option>
+                <option value="loro">Loro</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <h2>select basico multiple</h2>
+
+            <!-- el atributo "multiple" permite seleccionar varias opciones y en vez de una lista desplegable tendremos una lista -->
+
+            <select name="animales" multiple required>
+
+                <option value="gato">Gato</option>
+                <option value="perro">Perro</option>
+                <option value="loro">Loro</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <h2>select avanzado</h2>
+
+            <select name="animales">
+
+                <optgroup label="4 patas">
+                    <option value="gato">Gato</option>
+                    <option value="perro">Perro</option>
+                </optgroup>
+
+                <optgroup label="aves">
+                    <option value="loro">Loro</option>
+                    <option value="canario">Canario</option>
+                </optgroup>
+
+                <optgroup label="otros">
+                    <option value="araña">Araña</option>
+                    <option value="cobra" selected>Cobra</option>
+                </optgroup>
+
+            </select>
+
+        </div>
+
+        <button>Enviar</button>
+
+        <input type="reset">
+
+    </form>
+
+</body>
+
+</html>

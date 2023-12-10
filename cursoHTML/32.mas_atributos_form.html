@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Atributos para Formularios</h1>
+    
+    <form>
+
+        <!-- placeholer: da una pista de lo que se debe introducir -->
+        <!-- required: para que el campo sea obligatorio -->
+
+        <input placeholder="Introduce tu nombre" required>
+        <input placeholder="Introduce tu edad" required>
+
+        <!-- readonly: hace que un campo sea solo de lectura, y se envia lo que dejemos escrito por defecto -->
+        <!-- disabled: desactiva el campo, no se podra escribir en él ni se enviaran eos datos -->
+        <input type="text" value="Hola" readonly>
+        <input type="text" value="Hi" disabled>
+
+        <!-- autofocus: para poner el foco por defecto al cargar una pagina, osea que desde el inicio el campo este seleccionado para escribir -->
+        <input type="text"autofocus>
+
+        <!-- minlenght - maxlenght: establece un min y un max de caracteres para un campo -->
+        <!-- min - max: establecen un min y n max para el ingreso de un numero -->
+        <input type="text" minlength="5" maxlength="10">
+        <input type="number" min="18" max="40">
+
+        <button>Enviar</button>
+
+    </form>
+
+</body>
+</html>

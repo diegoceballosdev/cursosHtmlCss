@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+
+    <header><h1>Inputs para fechas</h1></header>
+
+    <main>
+
+        <form>
+            <!-- Introducir fechas -->
+            <input type="date" name="fecha"><br>
+
+            <!-- Fecha y hora, pero no tiene soporte en Firefox -->
+            <input type="datetime-local" name="fecha y hora"><br>
+
+            <!-- Fecha y hora TRUCO: uso "date" junto con "time" -->
+            <input type="date" name="fecha">
+            <input type="time" name="hora"><br>
+
+            <!-- Mes y Año - NO FIREFOX -->
+            <input type="month" name="mes"><br>
+
+            <!-- Semana de un año concreto - NO FIREFOX -->
+            <input type="week" name="semana">
+            
+        </form>
+
+    </main>
+
+</body>
+</html>

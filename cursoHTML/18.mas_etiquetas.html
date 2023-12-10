@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+</head>
+
+<body>
+
+    <h1>Etiquetas</h1>
+
+    <h2>Etiquetas de bloque</h2>
+
+    <div>
+
+        <h3>blockquote</h3>
+        <!-- se usa para marcar citas, autores o documentos, se puede incluir "cite para poner un enlace al documento original" -->
+
+        <p>Y esta es mi frase favorita desde siempre:</p>
+
+        <blockquote cite="https://www.culturagenial.com/es/lo-esencial-es-invisible-a-los-ojos/">
+            <p>Solo con el corazón se peude ver. Lo escencial es invisible a los ojos.</p>
+        </blockquote>
+
+        <p>¿Hermoso verdad?</p>
+
+    </div>
+
+    <div>
+
+        <h3>q</h3>
+        <!-- Se usa para citas de linea, es decir citas cortas que pueden ir en la misma oracion y no requieren saltos de lineas -->
+
+        <p>La frase <q cite="https://www.culturagenial.com/es/solo-se-que-no-se-nada/">Solo sé que no se nada</q> de
+            Socrates, me parece tan realista.</p>
+
+    </div>
+
+    <div>
+
+        <h3>cite</h3>
+        <!-- representa a una cita del título de una obra. Este elemento puede ser usado para citar los títulos de libros, artículos científicos, ensayos, pinturas, esculturas, obras de teatro, canciones, películas, series de TV, videojuegos, etc. No está diseñado para citar partes de una obra, sino sólo a su nombre. Para citar una parte de una obra se cuenta con los elementos q y blockquote. -->
+        <p>
+            De todos los libros de Stephen King, mi favorito es <cite>El Resplandor</cite> aunque tambien me gusta mucho
+            <cite>El Retrato de Rose Madder</cite> pues fue el primero que leí.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>div</h3>
+        <!-- es un contenedor genérico sin un significado semántico en particular. Se utiliza comúnmente en el desarrollo de documentos con propósitos estilísticos, en conjunto con los atributos style y class.  -->
+        <div style="color:tomato">
+            <p>Este es un texto que usa div como contenedor y al cual se le aplico estilo para darle un color tomato.
+            <p>
+        </div>
+
+    </div>
+
+    <div>
+
+        <h3>span</h3>
+        <!-- Es un contenedor de línea, equivalente a <div>. Se suele usar para encerrar palabras o pequeños textos y darles estilo a través de CSS o localizarlos desde JavaScript . Es igual a div pero para las lineas -->
+        <p>
+            Mi color favorito es el <span style="color:blue">azul</span> y el que mas odio es el <span
+                style="color:red;">rojo</span>.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>pre</h3>
+        <!-- muestra un texto tal y como esta escrito aqui en el codigo, incluyendo saltos, espacios, etc -->
+        <p>
+            <pre>
+            Veamos la lista siguiente:
+            - agua 
+            - soda 
+            - gaseosa 
+
+            Y el siguiente codigo:
+            i = input ()
+            C = 0 
+            i>2 then
+            i = i - 2
+            C = C + 1
+            print("El resultado es:", i)
+            </pre>
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>hr</h3>
+        <!-- representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). el hr marca una linea aunque esa no es su funcion semantica -->
+        <p>Esto es un tema
+            <hr>
+            Esto es otro tema totalmente distinto
+        </p>
+
+    </div>
+
+</body>
+
+</html>

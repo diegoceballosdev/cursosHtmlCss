@@ -1,0 +1,113 @@
+body{
+    background-color: violet;
+    margin: 0;
+}
+
+/* 
+    margin y padding son shorthands
+*/
+
+/* 
+    El margin-bottom del .title1 y el margin-top del .div no se suman. Es decir que no obtendre 50px+50px=100px. El espacio entre ambos seguira siendo de 50px. Esto se conoce como COLAPSO o SOLAPAMIENTO de margenes. Lo mismo ocurre con el margen-bottom del div y el top de .title3
+*/
+
+.title1{
+    background-color: tomato;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    /*
+    en title1 el maren-left/right en "auto" permite centrar la caja 
+    */
+}
+
+div{
+    background-color: yellow;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding : 30px;
+}
+
+.title2{
+    background-color: tomato;
+    width: 100px;
+    margin-right: auto; /*Empujo todo a la izqueirda*/
+}
+
+
+.title3{
+    background-color: tomato;
+    width: 80px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 50px ; 
+    /* 
+    En .title3 aplico el atajo "margin-left/right: auto" ypara centrar.
+    En .title3 el atajo padding aplica la medida en los 4 lados, 50px arriba y abajo, 20px a los lados 
+    */
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* 
+    LOS ELEMENTOS DE LINEA NO POSEEN MARGENES VERTICALES, SOLO HORIZONTALES, los cuales NO se solapan, osea que los amrgenes se sumaran 
+*/
+
+.link{
+    background-color: turquoise;
+    width: 100px;
+    padding: 20px;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+
+
+/* 
+    En el siguiente button no consigo centrarlo con el margin: auto asi que uso solo una medida para el margin-left 
+*/
+
+.button{
+    background-color: slateblue;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 230PX;
+    padding: 25px 40px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* 
+    Veamos lo siguiente. El header esta pegado a la parte superior de la ventana (se aprecia si quitamos el "h1")
+    Pero al añadir el "h1" los margenes colapsan pues el h1 posee su propio margen por defecto. entonces ambos se suman y me descoloca el diseño que plantee (el header se va para abajo).
+*/
+
+header{
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    /* border-top: 0.1px solid aquamarine; */
+}
+
+h1{
+    /* margin: 0; */
+    /* una solucion a medias es quitar los margenes del h1 */
+}
+
+/* 
+Las 3 propiedades comentadas en header son trucos que solucionan el problema, y no encuentran en ninguna documentacion
+    - overflow oculta el margen que desborda de la caja (header)
+    - padding crea un espacio entre la parte superior de la caja y el margen que se esta colapsando
+    - border con su tamaño minimo, estilo y color identico para que no se note, tambien es otra soluion.
+
+Para ver las soluciones solo debo elegir alguna y DESCOMENTAR la propiedad.
+*/

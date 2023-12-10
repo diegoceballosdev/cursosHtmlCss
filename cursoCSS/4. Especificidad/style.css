@@ -1,0 +1,49 @@
+/* 
+Especificidad: depende del tipo de selector y un valor asociado a esos tipos. El navegador renderiza la regla de estilo de mayor valor/especificidad.
+    selector de etiqueta: 0001
+    selector de clase: 0010
+    selector de ID: 0100
+    selector de linea: 1000
+    !important: le gana a todos los anteriores pero es una MALA PRACTICA
+*/
+
+h1{
+    background-color: aquamarine;
+}
+
+.title{
+    background-color: tomato;
+}
+
+#titulo{
+    background-color: magenta;
+}
+
+h1{
+    background-color: greenyellow;
+}
+
+h1.title#titulo{
+    background-color: orange;
+    /* Este es el de mayor especificidad: 111 */
+}
+
+h1.title{
+    background-color: gray;
+}
+
+/* La cascada solo se cumple cuando todas las reglas para un cierto elemento tienen la misma especificidad, de lo contrario ya se tendra en cuenta el valor de especifidad de cada configuracion de estilo y se renderizara la mayor */
+
+h2.second-title#titulo-secundario{
+    background-color: teal;
+}
+
+h2#titulo-secundario{
+    background-color: gold !important;
+}
+
+h2.second-title{
+    background-color: indianred;
+}
+
+/* !important se renderizara pues le gana a todo valor de especificidad, es un PESIMA PRACTICA pero sera util el 0,1% de las ocasiones */

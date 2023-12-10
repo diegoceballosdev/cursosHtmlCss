@@ -1,0 +1,31 @@
+/* 
+herencia: capacidad de algunos elementos de heredar algunas propiedades de sus elementos contenedores (padres, abuelos, etc)
+*/
+
+body{
+    color: brown;;
+}
+
+/* 
+Vemos que la etiqueta <a> no hereda la propiedad color (mantiene el color AZUL), pues es una de las tantas excepciones a la herencia, para estos casos usamos inherit,
+
+inherit: permite forzar la herencia
+*/
+
+.link{
+    color: inherit;
+}
+
+/* 
+Otro caso es donde se hereda la propiedad pero nosotros queremos que un elemento en particular NO HEREDE la propiedad, aqui usamos initial.
+
+initial: restaura las propiedades a sus valores por defecto, osea a los valores anteriores a la herencia
+*/
+
+.list{
+   color: lightseagreen;
+}
+
+.list-item-extra{
+    color: initial;
+}

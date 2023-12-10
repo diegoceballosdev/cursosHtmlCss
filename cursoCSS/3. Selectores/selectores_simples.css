@@ -1,0 +1,75 @@
+/* 
+Selectores simples:
+    selectores elementales (universal y de etiqueta)
+    selectores de atributos (de clase e identificador)
+    otros atributos::
+        [atributo]
+        [atributo=valor]
+        [atributo^=valor]
+        [atributo*=valor]
+        [atributo$=valor]
+        [atributo|=valor]
+*/
+
+
+/* SELECTOR UNIVERSAL: aplica a todo el doumento */
+
+*{
+    background-color: coral;
+}
+
+/* SELECTOR DE ETIQUETA: aplica a la toda la etiqueta */
+
+p{
+    background-color: darkgray;
+}
+
+/* SELECTOR IDENTIFICADOR: ASOCIA EL ID CON EL # PERO NO ES RECOMENTABLE PUES NUESTRO CODIGO NO SERA REUTILIZABLE */
+
+#title{
+    background-color: greenyellow
+}
+
+/* SELECTOR DE CLASE: APLICA A LA CLASE SELECCIONADA, SE LE SACARA PROVECHO CUANDO CONOZCA LA METODOLOGIA BEM */
+
+.title2{
+    background-color: indigo;
+}
+
+/* OTROS */
+
+    /* [atributo] : aplica a todo atributo seleccionado como sleector*/
+
+    [href]{
+        color: black;
+    }
+
+    /* [atributo=valor] : al incluir el valor especificamos exactamente a cual de todos los atributos con el mismo nombre aplicar el estilo*/
+
+    [href="http://www.google.com"]{
+        background-color: yellow;
+    }
+
+    /* [atributo^=valor] : Aplica a todo valor que inicie con la misma palabras */
+
+    [href^=color]{
+        background-color: brown;
+    }
+
+    /* [atributo*=valor] : aplica a todo valor que contenga la palabra en su nombre sin importar la posicion */
+
+    [href*=modo]{
+        background-color: cyan;
+    }
+
+    /* [atributo$=valor] : Aplica a todo valor que termine con la misma palabras */
+
+    [href$="blanco"]{
+        background-color: white;
+    }
+
+    /* [atributo|=valor] : incluye un atributo que tenga la palabra o la palabra+un guion, pues no hace diferencia entre ellos, en este caso "en" es igual que "en-" */
+
+    [lang|="en"]{
+        background-color: magenta;
+    }

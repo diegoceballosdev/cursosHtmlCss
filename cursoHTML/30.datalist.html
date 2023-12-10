@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Datalist</h1>
+
+    <form>
+
+    <p>¿Cual es la tecnologia que mejor dominas?</p><br>
+    
+    <input type="list" list="dev">   
+     
+    <datalist id="dev">
+        <option value="HTML">Lenguaje de marcado</option>
+        <option value="CSS">Lenguaje de estilo en cascada</option>
+        <option value="JavaScript">Lenguaje frontend</option>
+        <option value="PHP">Lenguaje backend</option>
+        <option value="React">Libreria JS</option>
+        <option value="Angular">Framework JS</option>
+        <option value="Laravel">Framework PHP</option>
+    </datalist>
+
+    </form>
+
+    <!-- "value es lo que se muestra como elemento del listado, y el texto entre las etiquetas option actua como descripcion del elemento" -->
+    <!-- Esto solo se aprecia en Chrome, mientras que en firefox se muestra el texto, y si no hay texto se muestra el value -->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+div{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------- */
+
+                        /* Bordes circulares */
+
+/* 
+En .box1 se aplican las medidas de bordes en el atajo border-radius, que funciona igual que los otros atajos de box-model. Osea siguiendo las agujas del reloj e iniciando por el borde superior izquierdo
+En .box2 se usa el border radius en bordes especificos de la caja, osea uno por uno.
+*/
+
+.box1{
+    border-radius: 50px 100px 20px;
+}
+
+
+
+.box2{
+    border-top-left-radius: 70px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 50px;
+}
+
+/* -------------------------------------------------------------------- */
+
+                       /* Bordes elipticos */
+
+/* 
+En .box3 se usa el atajo y funciona igual como los anteriores. Pero por cada borde pondremos 2 medidas, una a cada lado de la barra diagonal. A la izquierda las correspondientes al eje "x" de la elipse, y a la derecha las del eje "y". En ambos lados se sigue el mismo orden borde por borde. En este ejemplo particular se consideran asi: 
+    1)border-top-left y border-bottom-right : 50px / 100px
+    2)border-bottom-right y border-bottom-left : 70px / 120px
+
+En .box4 el sistema es el mismo del box3 pero con 4 medidas, osea una para cada esquina en sentido horario
+*/
+
+.box3{
+    border-radius: 50px / 120px;
+}
+
+
+.box4{
+    border-radius: 50px 60px 40px 100px/ 120px 100px 150px 50px;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+.box5{
+    border-top-left-radius: 70px / 100px;
+    border-top-right-radius: 50px / 100px;
+    border-bottom-right-radius: 70px / 100px;
+    border-bottom-left-radius: 50px / 100px;
+    /* 
+    Estos cambios no se aplicaran a la caja pues las elipses solo pueden aplicarse mediante el atajo " border radius: x / y ". Mientras que para bordes circulares si es posible aplicar medidas a esquinas especificos.
+    */
+}

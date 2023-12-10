@@ -1,0 +1,85 @@
+/* Text-align es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO
+Acepta 4 posibles valores
+    - text-align:left; -> Alinea el contenido a la izquierda
+    - text-align:right; -> Alinea el contenido a la derecha
+    - text-align:center; -> Alinea el contenido al centro
+    - text-align:justify; -> Alinea el contenido de forma justificada. No es recomendable usarlo.
+*/
+
+h1{
+    background-color: tomato;
+    text-align: center;
+}
+
+h2{
+    background-color: yellow;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* NOTA: Por defecto los elementos ya estan alineados a la izquierda */
+
+.text-1{
+    text-align: right;
+}
+
+.text-2{
+    text-align: justify;
+}
+
+.box{
+    background-color: tomato;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Recordar que SOLO estoy centrando el contenido, no el contenedor */
+    /* Si quisiera centrae el contenedor (div) uso los margin horizontales */
+}
+
+a{
+    background-color: teal;
+    display: block;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* Uso display para convertir este elem de linea, en un elemento de bloque pues solo asi funciona el "text-aline".
+    el display "inline-block" NO funcionaria, solo el block */
+}
+
+.artorias{
+    text-align: center;
+    margin-bottom: 30px;
+    /* la imagen se centra sin problemas pues a difrencia de los siguientes, esta imagen es CONTENIDO que se encuentra dentro de un CONTENEDOR */
+}
+
+.mario{
+    margin-bottom: 30px;
+    text-align: center;
+    /* Podemos ver que la imagen de mario no se centra en la PANTALLA. Esto es porque:
+    1) text-aline centra el contenido pero en este caso la imagen es TODO el contenido y no tiene contenedor
+    2)Las imagenes por defecto son "inline-block"
+    */
+
+}
+
+.naruto{
+    /* La solucion a la img anterior seria convertir la imagen en block y centrar con el truco de los margenes: */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 
+    EN RESUMEN, PARA CENTRAR LA IMG EN LA PANTALLA DEBO:
+
+    - Si la imagen esta en un CONTENEDOR que ocupa todo el ancho de la pantalla, solo uso text-aline
+    - Si la imagen esta en un CONTENEDOR con un ancho definido que no ocupa todo el ancho de la pantalla, debo usar text-aline para centrar el contenido(img) y a su vez centrar el contenedor con el truco de los margenes horizontales.
+    - Si la imagen NO TIENE CONTENEDOR tendre que convertir la img en un elemento de bolque con "display" y usar el truco de los margenes para centrar el bloque (que seria la imagen)
+
+*/

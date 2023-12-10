@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <header><h1>Formulario</h1></header>
+
+    <main>
+
+        <h2>Estructura Basica</h2>
+        <!-- Las etiquetas estructurales son:
+        - form
+        - label
+        - input
+        - button -->
+
+        <!-- el atributo "name" es fundamental pues se asocia a los valores que recibimos en la base de datos, y con el name sabemos a que corresponden tales valores -->
+
+        <form>
+
+            <!-- 1° forma de asociar label con input, con un "id" y un "for" -->
+            
+            <label for="name">Nombre</label>
+            <input id="name" name="nombre"><br>
+
+            <label for="surname">Apellido</label>
+            <input id="surname" name="apellido"><br>
+
+            <button>Enviar datos</button>
+
+            <hr>
+
+            <!-- 2° forma, anidando el input dentro del label correspondiente-->
+
+            <label>
+                Nombre
+                <input name="nombre"><br>
+            </label>
+
+            <label>
+                Apellido
+                <input name="apellido">
+            </label><br>
+
+            <button>Enviar</button>
+            
+        </form>
+
+    </main>
+
+</body>
+</html>

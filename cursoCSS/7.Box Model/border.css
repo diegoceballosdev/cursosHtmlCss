@@ -1,0 +1,64 @@
+*{margin: 0;}
+
+.button{
+    background-color: tomato;
+    padding: 20px;
+    margin: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    /* 
+    Puedo usar 3 propiedades con border: width, style y color y dar valores a cada una.
+    */
+}
+
+.reset{
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid black;
+    /* 
+    Puedo usar el atajo "border" para colocar las tres propiedades juntas y disminuir las lineas de codigo. El orden no importa, pero es recomendable usar siempre el mismo para mantener cierta coherencia.
+    */
+}
+
+
+.send{
+    background-color: teal;
+    padding: 20px;
+    margin: 10px;
+    border-top: 5px solid red;
+    border-right: 5px solid blueviolet;
+    border-bottom: 5px solid greenyellow;
+    border-left: 5px solid gray;
+    /* 
+    Puedo dar propiedades especificas a cada uno de los 4 bordes usando el atajo en cada lado/borde
+    */
+}
+
+
+.otherbutton{
+    background-color: powderblue;
+    padding: 20px;
+    margin: 10px;
+
+    border-top-width: 10px;
+    border-top-style: outset;
+    border-top-color: yellow;
+
+    border-right-width: 10px;
+    border-right-style: dashed;
+    border-right-color: black;
+
+    border-bottom-width: 10px;
+    border-bottom-style: inset;
+    border-bottom-color: pink;
+
+    border-left-width: 10px;
+    border-left-style: double;
+    border-left-color: brown;
+
+    /* 
+    Puedo dar el estilo a cada propiedad de cada lado del borde, pero no es muy optimo. Esto puede ser provechoso cuando declaramos un estilo general a todo el borde, y queremos cambiar alguno de ellos en alguna propiedad. Aqui se apreciara el uso de la herencia y la cascada.
+    */
+}

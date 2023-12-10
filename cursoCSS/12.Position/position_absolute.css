@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background-color: gray;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: ;
+}
+
+.container{
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+/* 
+    BOX 1 se posiciona tomando como referencia a .container que es su contenedor.
+*/
+
+.box1{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 200px;   
+}
+
+/* 
+    BOX 2 se posiciona tomando como referencia al body del html, que seria su contenedor
+*/
+
+.box2{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 
+    LO IMPOTANTE es saber que los elemento con pos absolute se posicionaran dependiendo del elemento que los contenga, y no necesariamente deben ser el padre.
+
+    Por ejemplo, si BOX 1 no tuviera a .container, pues se posicionaria segun el body, que es el contenedor que le sigue.
+
+    Si .container no estuviera posicionado (podria usar cualq valor), entonces box 1 no podria usarlo de referencia, y usaria al body
+*/

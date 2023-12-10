@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightcoral;
+    margin: 0;
+}
+
+header{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+.title1{
+    margin-top: 70px;
+}
+
+/* 
+    Fixed siempre se posiciona respecto al HTML 
+
+    Al posicionarlo, la caja pierde sus medidas, y solo se ajusta a su contenido. Por eso establecer nuevamente un ancho, o alto si fuera necesario
+
+    Al inicio no funciono el pos:fixed y esto fue porque NO DI VALOR A TOP, osea le di la propiedad position:fixed pero no le estableci la ubicacion. Entonces no se quedaba pegado al borde como yo queria.
+
+    SIEMPRE DAR VALORES AL pos:fixed
+
+    .title1 tiene un margin-top, pues como el header perdio su espacio reservado, este se colocaba alli al inicio del body. Al usar el margin ubico el texto debajo de la barra de menu
+*/

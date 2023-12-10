@@ -1,0 +1,32 @@
+body{
+    background-color: lightcoral;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: lightgreen;
+    margin: 0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+h2{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/* 
+    Lo que realmente hacemos con stiky es recorrer el alto del elemento que lo contiene.
+    Por ejemplo::
+        - si <nav> esta contenido por body, al aplicar stiky al nav, este recorrera todo el alto/contenido del body.
+        - pero si se lo aplicamos a, por ejemplo, un <h2> contenido por el nav, el stiky solo recorrera el largo del nav (y no del body) pues es quien lo contiene
+
+    Lo que se recorre es el alto del CONTENEDOR, no el alto del elemento que posee la propiedad stiky
+        
+    Las medidas de top, elft, etc, sirven para establecer la distancia entre el html y el contenedor, a partir de la cual el elemento se comportara como fixed...y mantendra ese comportamiento hasta recorrer el alto del contenedor
+*/

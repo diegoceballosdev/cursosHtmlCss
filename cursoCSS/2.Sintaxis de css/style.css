@@ -1,0 +1,15 @@
+/* 
+La sintaxis de css es la siguiente:
+- selector: el elemento al cual vamos a aplicar estilos
+- propiedad: lo que vamos a cambiar
+- valor: el nuevo valor que le vamos a dar a la propiedad
+- propiedad:valor   :   se denomina "declaracion al conjunto
+- regla: Al conjunto de "selector + declaracion(es) se le denomina regla
+*/
+
+selector{
+    propiedad:valor;
+    propiedad2:valor;
+    propiedad3:valor
+}
+

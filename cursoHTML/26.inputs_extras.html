@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+
+        <!-- color para cuando el usuario trabaje con colores, cambiar letras o dibujar por ejemplo -->
+        <div>
+            <label> Color
+                <input type="color" name="color">
+            </label>
+        </div>
+
+        <!-- number para ingresar numeros -->
+        <div>
+            <label> Numeros
+                <input type="number" name="numeros">
+            </label>
+        </div>
+
+        <!-- range en caso de que se deba ingresar un rango -->
+        <div>
+            <label> Rango
+                <input type="range" step="5" min="0" max="30">
+            </label>
+        </div>
+
+        <!-- text no suele ponerse pues es el valor por defecto, pero hay ocasiones donde sera necesario hacerlo y debemos saberlo -->
+        <div>
+            <label> Texto
+                <input type="text" name="texto">
+            </label>
+        </div>
+
+        <!-- reset reestablece los valores predeterminados del formulario, osea los deja vacios -->
+        <div>
+                <input type="reset" value="Reestablecer valores">
+        </div>
+
+    </form>
+
+</body>
+</html>

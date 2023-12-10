@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+
+    <header><h1>Listas en HTML</h1></header>
+
+    <main>
+
+        <!-- Listas desordenadas (unordered list) -->
+        <h2>Lista del supermercado</h2>
+        <ul type="square">
+            <li>pan</li>
+            <li>carne</li>
+            <li>leche</li>
+            <li type="disc">atún</li>
+            <li type="circle">tomates</li>
+        </ul>
+
+        <!-- Lista ordenada (ordered list) -->
+        <!-- start: establece el valor de inciio en el item de la lista -->
+        <h2>Ruta de aprendizajede frontend</h2>
+        <ol type="A" start="3">
+            <li>HTML</li>
+            <li type="1">CSS</li>
+            <li type="A">JavaScript</li>
+            <li type="I">React</li>
+            <li type="a">React Native</li>
+        </ol>
+
+        <!-- Lista de definicion (definition list) -->
+        <h2>Conceptos Front end</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>Es un lenguaje de programacion para dar interactividad a la pagina web</dd>
+        </dl>
+        
+        <!-- Anidado de listas -->
+        <h2>Paises y Programacion</h2>
+        <ul>
+            <li>America</li>
+            <ol>
+                <li>Argentina</li>
+                <ul>
+                    <li>Salta</li>
+                    <li>Jujuy</li>
+                    <li>Tucuman</li>
+                </ul>
+                <li>Brasil</li>
+                <ul>
+                    <li>Rio de Janeiro</li>
+                    <li>Porto Alegre</li>
+                </ul>
+            </ol>
+            <li>Africa</li>
+            <ol>
+                <li>Egipto</li>
+                <li>Sudafrica</li>
+                <li>Republica del Congo</li>
+            </ol>
+            <li>Desarrollo web</li>
+            <dl>
+                <dt>Frontend</dt>
+                <dd>Area enfocada en el diseño, estructura e interactividad</dd>
+                <ul>
+                    <li>html, css, javascript</li>
+                    <li>frameworks</li>
+                    <ul>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue</li>
+                    </ul>
+                </ul>
+            </dl>
+        </ul>
+
+    </main>
+
+</body>
+</html>

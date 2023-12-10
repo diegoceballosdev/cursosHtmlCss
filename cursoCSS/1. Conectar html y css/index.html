@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- La 1° forma de añadir css al html es esta, es la que debe usarse siempre salvo pequeñas excepciones, donde usaremos la 2° forma-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- La 2° forma es colocando cada configuracion de estilos dentro del head del html. Pero no es recomendado porque al tener que hacer cambio en proyectos grandes con varios htmls y cientos de lineas, no es nada practico. Pero en cieras ocasiones sera la unica forma de añadir css al html -->
+    <style>
+        p{
+            color: crimson;
+        }
+    </style>
+
+    <!-- La 4° froma y tambien que nunca debemos hacer pues es asincrona, es esta, pues en vez de cargar todo junto, se carga primero el html, luego el import.css y luego los siguientes imports.css si es que hay mas. Es terrible para la experiencia de usuario -->
+    <style>
+        @import url(css/styles.css);
+    </style> 
+
+</head>
+
+
+<body>
+
+    <!-- La 3° forma de añadir css es con los estilos en linea, es decir agregando estilos en las lineas de codigo del html, y nunca debe hacerse pues ensucia y agranda el documento. Es una mala practica y es algo que se hacia hace años cuando no habia otros modos de hacerlo -->
+    <h1 style="background-color: greenyellow;">Conectar html y css</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptatibus error animi dolores, consequatur architecto perspiciatis! Nesciunt ea tenetur necessitatibus, excepturi tempora quam iusto, vel reprehenderit hic obcaecati cum quidem?</p>
+    
+</body>
+
+</html>

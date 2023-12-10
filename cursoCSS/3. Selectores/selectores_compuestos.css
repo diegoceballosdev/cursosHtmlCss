@@ -1,0 +1,56 @@
+/* 
+Selectores compuestos: 
+    selectores agrupados, 
+    selectores combinadores 
+    pseudoclases-pseudoelementos.
+*/
+
+
+/* SELECTORES AGRUPADOS : los selectores se agrupan separados por comas y se escribe el estilo una sola vez para todos */
+
+.text-1, .text-2, .text-3, .text-4 {
+    background-color: slateblue;
+}
+
+
+/* SELECTORES COMBINADOS: 
+    selector descendiente
+    Selector de hijo directo
+    selectores de hermano siguiente +
+    selectores de hermanos siguientes ~
+
+    Nota: nunca bajar mas de un nivel en estos selectores
+*/
+
+
+/* DESCENDIENTE: los selectores se separan con un espacio y no se recomiendan mas de dos por una cuestion de especificidad. Un selector es desdcendiente de otro cuando se encuentra entre sus etiquetas de apertura y cierre
+En caunto al selector escogido, no importa el el nivel en que se encuentre siempre y cuando este dentro de las etiquetas, osea todo selector con tal nombre sera estilizado */
+
+div .title-2 {
+    background-color: greenyellow;
+}
+
+
+/* Selector de hijo directo: aplica a todos los selectores que sean hijos directos del primero, pero solo a los que sean hijos directos.
+En caso de que sean "nietos" por asi decirlo, o que sean de niveles aun mas inferiores, pues no se aplicara el estilo, ESO ES LO QUE LO DIFERENCIA DEL SELECTOR DESCENDIENTE */
+/* POR EJEMPLO DENTRO DE LA ETIQUETA SPAN HAY UN SELECTOR "hijo-directo", PERO COMO SPAN ES NIETO Y NO HIJO, PUES NO SE APLICARA EL ESTILO, aunque posea el selector */
+
+div > .hijo-directo {
+    background-color:magenta ;
+}
+
+
+/* HERMANO SIGUIENTE: aplica estilo al selector que se esta sumando al primer selector, es decir al siguiente inmediato el primer mienbro de la suma*/
+/* En este caso se aplicaria al h2 */
+
+p + h2 {
+    background-color: indianred;
+}
+
+
+/* HERMANOS SIGUIENTES: el estilo se aplica a todos los selectores hermanos que escojamos (el segundo selector, en este caso "text-herm") y se encuentren en el mismo nivel, y por eso se denominan hermanos.
+No importa si en medio de los selectores hermanos hay otros elementos, se aplican igual */
+
+h3 ~ .text-herm {
+    background-color:teal ;
+}
